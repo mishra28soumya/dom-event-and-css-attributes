@@ -43,36 +43,46 @@
         => returns undefined
         
 
-4. Event Listeners
+4. Event listeners
 
-    a. what is event
+    a. what are events
     
-    b. what is event handler/event listener 
+    => actions that happen on a webpage (click, scroll, mouse-enter, mouse-exit, double click, etc)
+
+    b. what are event handlers/event listeners 
     
-    c. event flow
+    => listen to an event and perform some action/operation. Event listeners are also called event handlers.
+
+    c. event flow 
     
-        => event bubbling
-        
-        => event capturing
-        
-    d. Adding event handler
+    => explains the order in which events are recieved on the page
     
-        => in html
-        
-        => in js : addEventListener(event, function, capture)
-        
-    e. Removing event handler
+
+        => event bubbling : starts from the most specific element and then flows upwards towards the least specific element [by default]
+
+        => event capturing : starts from the least specific element and goes to the most specific element
+
+
+    d. adding event listeners
+    
+        => html => using attributes
+
+        => addEventListener(event,function, capture) : [preferred]
+
+    e. remove event listeners
     
 
 5. Modifying CSS of the elements
 
-    a. setting style
+
+    a. setting style => `element.style.<property>=<value>`
     
-    b. appending style
     
-    c. viewing class name
+    b. appending style => `element.style.cssText = element.style.cssText +<value>`
     
-    d. adding class name
     
-    e. removing class name
+    c. viewing class names => `element.className`
     
+    d. adding class names => `element.classList.add('name')`
+    
+    e. removing classnames => `element.classList.remove('name')`
